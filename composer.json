@@ -1,0 +1,19 @@
+{
+    "name": "mapado/cache-info-bundle",
+    "description": "Http cache info on top on Symfony Framework Bundle",
+    "type": "symfony-bundle",
+    "autoload": {
+      "psr-4": { "Mapado\\CacheInfoBundle\\": "src/" }
+    },
+    "require": {
+        "symfony/framework-bundle": "^2.7",
+        "symfony/console": "^2.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julien Deniau",
+            "email": "julien.deniau@gmail.com"
+        }
+    ]
+}
