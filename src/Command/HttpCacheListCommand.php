@@ -132,7 +132,7 @@ class HttpCacheListCommand extends ContainerAwareCommand
                 $reader = new \Doctrine\Common\Annotations\AnnotationReader();
                 $reflClass = new \ReflectionMethod($controller, $method);
                 return $reader->getMethodAnnotation($reflClass, 'Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache') ?:
-                    $reader->getMethodAnnotation($reflClass, 'Mapado\FrontBundle\CacheMayBe');
+                    $reader->getMethodAnnotation($reflClass, 'Mapado\CacheInfoBundle\Annotation\CacheMayBe');
             }
         } catch (\InvalidArgumentException $e) {
         }
